@@ -1,0 +1,17 @@
+{
+  "name": "my-app",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/vue-fontawesome": "^0.1.9",
+    "@nuxtjs/fontawesome": "^1.1.2",
+    "nuxt": "^2.12.2",
+    "nuxt-fontawesome": "^0.4.0",
+    "vue-flickity": "^1.2.1"
+  }
+}
