@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "portfolio",
   "scripts": {
     "dev": "nuxt"
   },
@@ -12,6 +12,8 @@
     "@nuxtjs/fontawesome": "^1.1.2",
     "nuxt": "^2.12.2",
     "nuxt-fontawesome": "^0.4.0",
-    "vue-flickity": "^1.2.1"
-  }
+    "storyblok-nuxt": "^1.2.0"
+  },
+  "keywords": [],
+  "description": ""
 }
