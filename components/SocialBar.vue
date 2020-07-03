@@ -1,76 +1,96 @@
 <template>
   <div class="sox">
-        <ul>
-            <li>
-                <a href="mailto:verellino@gmail.com?subject=WASSUP MEKEL!🤙">
-                    <fa :icon="faEnvelope" />
-                </a>
-            </li>
-            <li>
-                <a href="https://id.linkedin.com/in/michael-verellino-0b99a7142">
-                    <fa :icon="faLinkedinIn" />
-                </a>
-            </li>
-            <li>
-                <a href="http://behance.com/verellino">
-                    <fa :icon="faBehance" />
-                </a>
-            </li>
-            <li>
-                <a href="http://twitter.com/verellino">
-                    <fa :icon="faTwitter" />
-                </a>
-            </li>
-            <li>
-                <a href="http://instagram.com/verellino">
-                    <fa :icon="faInstagram" />
-                </a>
-            </li>
-        </ul>
-    </div>
+    <ul>
+      <li>
+        <a href="mailto:verellino@gmail.com?subject=WASSUP MEKEL!🤙">
+          <fa :icon="faEnvelope"/>
+        </a>
+      </li>
+      <li>
+        <a href="https://id.linkedin.com/in/michael-verellino-0b99a7142">
+          <fa :icon="faLinkedinIn"/>
+        </a>
+      </li>
+      <li>
+        <a href="http://behance.com/verellino">
+          <fa :icon="faBehance"/>
+        </a>
+      </li>
+      <li>
+        <a href="http://twitter.com/verellino">
+          <fa :icon="faTwitter"/>
+        </a>
+      </li>
+      <li>
+        <a href="http://instagram.com/verellino">
+          <fa :icon="faInstagram"/>
+        </a>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
-import { faEnvelope } from '@fortawesome/fontawesome-free-solid'
-import { faTwitter, faInstagram, faBehance, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from "@fortawesome/fontawesome-free-solid";
+import {
+  faTwitter,
+  faInstagram,
+  faBehance,
+  faLinkedinIn
+} from "@fortawesome/free-brands-svg-icons";
 export default {
-    
-    computed: {
-      faEnvelope () {
-         return faEnvelope
-      },
-      faTwitter () {
-         return faTwitter
-      },
-      faInstagram () {
-         return faInstagram
-      },
-      faLinkedinIn () {
-         return faLinkedinIn
-      },
-      faBehance () {
-         return faBehance
-      },
+  computed: {
+    faEnvelope() {
+      return faEnvelope;
     },
-    name: 'SocialBar'
-}
+    faTwitter() {
+      return faTwitter;
+    },
+    faInstagram() {
+      return faInstagram;
+    },
+    faLinkedinIn() {
+      return faLinkedinIn;
+    },
+    faBehance() {
+      return faBehance;
+    }
+  },
+  name: "SocialBar"
+};
 </script>
 
 <style>
-.sox{
-    position: fixed;
-    display: flex;
-    width: calc(100vw - 160px);
-    bottom: 40px;
-    justify-content: flex-end;
-    z-index: 100;
-    mix-blend-mode: difference;
+.sox {
+  position: fixed;
+  display: flex;
+  width: calc(100vw - 160px);
+  bottom: 40px;
+  justify-content: flex-end;
+  z-index: 100;
+  mix-blend-mode: difference;
 }
-.sox ul{
-    display: flex;
+.sox ul {
+  display: flex;
 }
-.sox li{
-    display: inline-block;
-    padding: 0 1rem;
+.sox li {
+  display: inline-block;
+  padding: 0 1rem;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 2) {
+  .sox {
+    width: calc(100vw - 80px);
+  }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+  .sox {
+    width: calc(100vw - 32px);
+  }
+}
+@media only screen and (min-device-width: 300px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .sox {
+    width: calc(100vw - 16px);
+    bottom: 32px;
+  }
 }
 </style>
